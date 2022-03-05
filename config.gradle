@@ -1,0 +1,93 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+ext {
+    retrofit = '2.7.2'
+
+    ext.bubble_version = "1.0.3"
+    ext.jacoco_version = "0.8.2"
+    agentweb = "4.1.3"
+
+    //应用包名配置
+    applicationId="com.xue.du"
+    //签名打包配置
+    keyAlias="for_life"
+    keyPassword="x1u2e3d4u5"
+    storeFile="../keystore/xuedu.jks"
+    storePassword="x1u2e3d4u5"
+
+    android = [
+            compileSdkVersion : 29,
+            buildToolsVersion: '29.0.2',
+            minSdkVersion    : 21,
+            targetSdkVersion : 28,
+    ]
+
+    androidDependencies = [
+            kotlin_version           : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version",
+            appcompat                : "androidx.appcompat:appcompat:1.2.0-alpha02",
+            butterKnife              : "com.jakewharton:butterknife:10.2.1",
+            apt_butterKnife          : "com.jakewharton:butterknife-compiler:10.2.1",
+            refresh                  : "com.scwang.smartrefresh:SmartRefreshLayout:1.1.0",
+            refresh_header           : "com.scwang.smartrefresh:SmartRefreshHeader:1.0.3",
+            rxjava                   : "io.reactivex.rxjava2:rxjava:2.2.16",
+            rxandroid                : "io.reactivex.rxjava2:rxandroid:2.1.1",
+            retrofit                 : "com.squareup.retrofit2:retrofit:${retrofit}",
+            retrofit_manager         : "me.jessyan:retrofit-url-manager:1.4.0",
+            retrofit_adapter         : "com.squareup.retrofit2:adapter-rxjava2:${retrofit}",
+            retrofit_convert         : "com.squareup.retrofit2:converter-gson:${retrofit}",
+//            retrofit_fastjson_convert: "com.github.BaronZ88:Retrofit2-FastJson-Converter:1.2",
+            arouter                  : "com.alibaba:arouter-api:1.5.1",
+            arouter_compiler         : "com.alibaba:arouter-compiler:1.5.1",
+            fastjson                 : "com.alibaba:fastjson:1.2.67",
+            gson                     : "com.google.code.gson:gson:2.8.6",
+            material                 : "com.google.android.material:material:1.1.0",
+            core_ktx                 : "androidx.core:core-ktx:1.2.0",
+            banner                   : "io.github.youth5201314:banner:2.2.2",
+            glide                    : "com.github.bumptech.glide:glide:4.11.0",
+            constraintlayout         : "androidx.constraintlayout:constraintlayout:1.1.3",
+            recyclerview             : "androidx.recyclerview:recyclerview:1.0.0",
+            cardview                 : "androidx.cardview:cardview:1.0.0",
+
+            agentweb                 : "com.just.agentweb:agentweb:${agentweb}",
+            filechooser              : "com.just.agentweb:filechooser:${agentweb}",
+            downloader               : "com.download.library:Downloader:${agentweb}",
+            baseRecyclerAdapter      : "com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.0-beta10",
+            eventbus                 : "org.greenrobot:eventbus:3.2.0",
+            immersionbar             : "com.gyf.immersionbar:immersionbar:3.0.0",
+            immersionbar_ktx         : "com.gyf.immersionbar:immersionbar-ktx:3.0.0",
+            klog                     : "com.github.zhaokaiqiang.klog:library:1.6.0",
+            crop                     : 'com.github.yalantis:ucrop:2.2.4-native',
+            Luban                     : 'top.zibin:Luban:1.1.8',
+            matisse                  : 'com.zhihu.android:matisse:0.5.3-beta3',
+            apache_commons           : 'org.apache.commons:commons-text:1.1',
+            pickerview               : 'com.contrarywind:Android-PickerView:4.1.9',
+            zxing                    : 'com.github.yuzhiqiang1993:zxing:2.2.8',
+            zxing_core               : 'com.google.zxing:core:3.3.3',
+            xpopup                   : 'com.lxj:xpopup:2.1.3',
+            bugly                    : 'com.tencent.bugly:crashreport:3.3.1' ,
+            bugly_ndk                : 'com.tencent.bugly:nativecrashreport:3.7.0' ,
+            umeng_common             : 'com.umeng.umsdk:common:9.4.4' ,
+            umeng_asms               : 'com.umeng.umsdk:asms:1.4.1' ,
+            umeng_apm              : 'com.umeng.umsdk:apm:1.3.1' ,//错误分析升级为独立SDK，看crash数据请一定集成
+            thridTabLayout           : 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar' ,
+            leakcanary               : 'com.squareup.leakcanary:leakcanary-android:2.8.1' ,
+            ConsecutiveScroller      : 'com.github.donkingliang:ConsecutiveScroller:4.4.0',
+            flowlayout               : 'com.hyman:flowlayout-lib:1.1.2' ,
+            Curtain                  : 'com.github.lqxue:Curtain:0.0.4',
+            litepal                  : 'org.litepal.guolindev:core:3.2.3',
+            wechat                  : 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:5.5.8',
+            kotlinx_coroutines_core  :'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7',
+            kotlinx_coroutines_android  :'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.7',
+            lottie                     :'com.airbnb.android:lottie:3.7.0',
+            big_image_preview          :'com.github.SherlockGougou:BigImageViewPager:androidx-6.0.1',
+            mailLine_View              :'com.xhb.jxnk25:MailLineView:1.1.0',
+            permissionx              :'com.guolindev.permissionx:permissionx:1.5.0',
+            huawei_verifier          :'com.llew.huawei:verifier:1.0.2',
+            jsoup                    :'org.jsoup:jsoup:1.10.1',
+            facebook_login           : 'com.facebook.android:facebook-login:6.5.1',
+            x5_webView                  :'com.tencent.tbs:tbssdk:44085',
+            ToastUtils                  : 'com.github.getActivity:ToastUtils:10.3',
+            //显示图片九宫格
+            ninegridimageview        : 'com.jaeger.ninegridimageview:library:1.1.1'
+    ]
+
+}

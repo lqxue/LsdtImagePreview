@@ -1,0 +1,3 @@
+include ':ImagePreview'
+include ':app'
+rootProject.name = "LsdtImagePreview"
