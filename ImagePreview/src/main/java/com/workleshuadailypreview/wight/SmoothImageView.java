@@ -198,7 +198,7 @@ public class SmoothImageView extends PhotoView {
             moveToOldPosition();
         } else {
             changeTransform();
-            setTag(R.id.item_image_key, true);
+            setTag(R.id.image_preview_item_image_key, true);
             if (transformOutListener != null) {
                 transformOutListener.onTransformOut();
             }
@@ -401,8 +401,8 @@ public class SmoothImageView extends PhotoView {
         animator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationStart(Animator animation) {
-                if (getTag(R.id.item_image_key) != null) {
-                    setTag(R.id.item_image_key, null);
+                if (getTag(R.id.image_preview_item_image_key) != null) {
+                    setTag(R.id.image_preview_item_image_key, null);
                     setOnLongClickListener(null);
                 }
             }

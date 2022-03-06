@@ -27,5 +27,5 @@
         android:layout_centerInParent="true"
         android:visibility="gone"
         android:alpha="0"
-        android:src="@drawable/com_workleshuadailypreview_ic_video" />
+        android:src="@drawable/image_preview_ic_video" />
 </RelativeLayout>

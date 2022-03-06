@@ -125,12 +125,12 @@ public class BezierBannerView extends View implements ViewPager.OnPageChangeList
     }
 
     private void initattrs(AttributeSet attrs) {
-        TypedArray typedArray=getContext().obtainStyledAttributes(attrs,R.styleable.BezierBannerView);
-        mSelectedColor=typedArray.getColor(R.styleable.BezierBannerView_selectedColor,0xFFFFFFFF);
-        mUnSelectedColor=typedArray.getColor(R.styleable.BezierBannerView_unSelectedColor,0xFFAAAAAA);
-        mRadius=typedArray.getDimension(R.styleable.BezierBannerView_selectedRaduis,mRadius);
-        mNomarlRadius=typedArray.getDimension(R.styleable.BezierBannerView_unSelectedRaduis,mNomarlRadius);
-        distance=typedArray.getDimension(R.styleable.BezierBannerView_spacing,distance);
+        TypedArray typedArray=getContext().obtainStyledAttributes(attrs,R.styleable.ImagePreviewBezierBannerView);
+        mSelectedColor=typedArray.getColor(R.styleable.ImagePreviewBezierBannerView_imagePreviewSelectedColor,0xFFFFFFFF);
+        mUnSelectedColor=typedArray.getColor(R.styleable.ImagePreviewBezierBannerView_imagePreviewUnSelectedColor,0xFFAAAAAA);
+        mRadius=typedArray.getDimension(R.styleable.ImagePreviewBezierBannerView_imagePreviewSelectedRaduis,mRadius);
+        mNomarlRadius=typedArray.getDimension(R.styleable.ImagePreviewBezierBannerView_imagePreviewUnSelectedRaduis,mNomarlRadius);
+        distance=typedArray.getDimension(R.styleable.ImagePreviewBezierBannerView_imagePreviewSpacing,distance);
         typedArray.recycle();
     }
 

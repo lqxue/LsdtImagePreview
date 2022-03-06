@@ -1,10 +1,6 @@
 <resources>
-    <string name="app_name">ImagePreviewLibrary</string>
-    <dimen name="yms_dimens_50.0_px">25.0dp</dimen>
-    <string name="string_count">%1$s/%2$s</string>
-    <string name="Playback_failed">播放失败</string>
-    <string name="dialog_daily_share_cancel">取消</string>
-    <string name="dialog_daily_share_wechat">分享到微信</string>
-    <string name="dialog_daily_save_image">保存图片</string>
-    <item name="item_image_key" type="id" />
+    <dimen name="image_preview_yms_dimens_50.0_px">25.0dp</dimen>
+    <string name="image_preview_string_count">%1$s/%2$s</string>
+    <string name="image_preview_playback_failed">播放失败</string>
+    <item name="image_preview_item_image_key" type="id" />
 </resources>

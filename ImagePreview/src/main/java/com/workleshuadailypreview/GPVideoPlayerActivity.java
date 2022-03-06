@@ -14,13 +14,13 @@ public class GPVideoPlayerActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_gpvideoplayer);
+        setContentView(R.layout.image_preview_activity_gpvideoplayer);
         videoView=findViewById(R.id.gpVideo);
         videoView.setVideoPath(getIntent().getStringExtra("url"));
         videoView.setOnErrorListener(new MediaPlayer.OnErrorListener() {
             @Override
             public boolean onError(MediaPlayer mp, int what, int extra) {
-                Toast.makeText(GPVideoPlayerActivity.this, R.string.Playback_failed,Toast.LENGTH_SHORT).show();
+                Toast.makeText(GPVideoPlayerActivity.this, R.string.image_preview_playback_failed,Toast.LENGTH_SHORT).show();
                 return false;
             }
         });

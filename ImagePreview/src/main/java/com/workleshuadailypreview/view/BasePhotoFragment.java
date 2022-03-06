@@ -77,7 +77,7 @@ public class BasePhotoFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_image_photo_layout, container, false);
+        return inflater.inflate(R.layout.image_preview_fragment_image_photo_layout, container, false);
     }
 
     @CallSuper

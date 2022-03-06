@@ -28,12 +28,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="10dp"
-        app:selectedRaduis="4dp"
-        app:unSelectedRaduis="4dp"
+        app:imagePreviewSelectedRaduis="4dp"
+        app:imagePreviewUnSelectedRaduis="4dp"
         android:visibility="gone"
-        app:selectedColor="@android:color/white"
-        app:unSelectedColor="@android:color/darker_gray"
-        app:spacing="6dp"
+        app:imagePreviewSelectedColor="@android:color/white"
+        app:imagePreviewUnSelectedColor="@android:color/darker_gray"
+        app:imagePreviewSpacing="6dp"
         android:layout_gravity="bottom|center_vertical|center_horizontal" />
 
 </FrameLayout>

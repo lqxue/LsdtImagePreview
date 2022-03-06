@@ -28,7 +28,7 @@ class TestImageLoader : IZoomMediaLoader {
     ) {
         Glide.with(context)
             .asBitmap()
-            .error(R.drawable.com_workleshuadailypreview_glide_defult_ic)
+            .error(R.drawable.image_preview_glide_defult_ic)
             .load(path)
             .listener(object : RequestListener<Bitmap> {
                 override fun onLoadFailed(
@@ -62,7 +62,7 @@ class TestImageLoader : IZoomMediaLoader {
     ) {
         Glide.with(context)
             .asGif()
-            .error(R.drawable.com_workleshuadailypreview_glide_defult_ic)
+            .error(R.drawable.image_preview_glide_defult_ic)
             .load(path)
             .dontAnimate() //去掉显示动画
             .listener(object : RequestListener<GifDrawable> {

@@ -6,6 +6,9 @@ def config = rootProject.ext
 def androidDepend = rootProject.ext.androidDependencies
 
 android {
+
+    //增加资源前缀约束定义
+    resourcePrefix "image_preview_"
     compileSdkVersion config.android.compileSdkVersion
     buildToolsVersion config.android.buildToolsVersion
 

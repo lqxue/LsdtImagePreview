@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="BezierBannerView">
-        <attr name="selectedColor" format="color"/>
-        <attr name="unSelectedColor" format="color"/>
-        <attr name="selectedRaduis" format="dimension"/>
-        <attr name="unSelectedRaduis" format="dimension"/>
-        <attr name="spacing" format="dimension"/>
+    <declare-styleable name="ImagePreviewBezierBannerView">
+        <attr name="imagePreviewSelectedColor" format="color"/>
+        <attr name="imagePreviewUnSelectedColor" format="color"/>
+        <attr name="imagePreviewSelectedRaduis" format="dimension"/>
+        <attr name="imagePreviewUnSelectedRaduis" format="dimension"/>
+        <attr name="imagePreviewSpacing" format="dimension"/>
     </declare-styleable>
 </resources>

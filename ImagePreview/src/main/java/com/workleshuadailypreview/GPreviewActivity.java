@@ -51,7 +51,7 @@ public class GPreviewActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         initData();
         if (setContentLayout() == 0) {
-            setContentView(R.layout.activity_image_preview_photo);
+            setContentView(R.layout.image_preview_activity_image_preview_photo);
         } else {
             setContentView(setContentLayout());
         }
@@ -147,7 +147,7 @@ public class GPreviewActivity extends FragmentActivity {
             bezierBannerView.attachToViewpager(viewPager);
         } else {
             ltAddDot.setVisibility(View.VISIBLE);
-            ltAddDot.setText(getString(R.string.string_count, (currentIndex + 1), imgUrls.size()));
+            ltAddDot.setText(getString(R.string.image_preview_string_count, (currentIndex + 1), imgUrls.size()));
             viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
                 @Override
                 public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -158,7 +158,7 @@ public class GPreviewActivity extends FragmentActivity {
                 public void onPageSelected(int position) {
                     //当被选中的时候设置小圆点和当前位置
                     if (ltAddDot != null) {
-                        ltAddDot.setText(getString(R.string.string_count, (position + 1), imgUrls.size()));
+                        ltAddDot.setText(getString(R.string.image_preview_string_count, (position + 1), imgUrls.size()));
                     }
                     currentIndex = position;
                     viewPager.setCurrentItem(currentIndex, true);
