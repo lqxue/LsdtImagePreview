@@ -6,7 +6,6 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
-import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.load.resource.gif.GifDrawable
 import com.bumptech.glide.request.RequestListener
@@ -64,7 +63,6 @@ class TestImageLoader : IZoomMediaLoader {
             .asGif()
             .error(R.drawable.image_preview_glide_defult_ic)
             .load(path)
-            .dontAnimate() //去掉显示动画
             .listener(object : RequestListener<GifDrawable> {
                 override fun onLoadFailed(
                     e: GlideException?,

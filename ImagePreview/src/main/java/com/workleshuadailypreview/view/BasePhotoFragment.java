@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import androidx.annotation.CallSuper;
 import androidx.annotation.Nullable;
@@ -173,13 +172,6 @@ public class BasePhotoFragment extends Fragment {
      * 初始化数据
      */
     private void initData() {
-        imageView.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                itemLongClickListener.onLongClick((ImageView) v,getActivity());
-                return false;
-            }
-        });
         Bundle bundle = getArguments();
         boolean isSingleFling = true;
         // 非动画进入的Fragment，默认背景为黑色
@@ -195,6 +187,16 @@ public class BasePhotoFragment extends Fragment {
             rootView.setTag(beanViewInfo.getUrl());
             //是否展示动画
             isTransPhoto = bundle.getBoolean(KEY_TRANS_PHOTO, false);
+            //设置长按事件
+            if (itemLongClickListener != null){
+                imageView.setOnLongClickListener(new View.OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        itemLongClickListener.onLongClick(beanViewInfo.getUrl(),imageView,getActivity());
+                        return false;
+                    }
+                });
+            }
             if (beanViewInfo.getUrl().toLowerCase().contains(".gif")) {
                 imageView.setZoomable(false);
                 //加载图
